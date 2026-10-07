@@ -1,0 +1,212 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Alchemforge Software â€” Privacy-first tools, one-time prices</title>
+<meta name="description" content="Desktop apps and Chrome extensions by Alchemforge. One-time prices, no subscriptions, no uploads â€” your files and data stay on your computer." />
+<meta name="theme-color" content="#f6f3ec" />
+<link rel="icon" href="https://alchemforge.com/assets/images/favicon.ico" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Offline Bank Statement Converter",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "BusinessApplication",
+  "description": "Converts PDF bank statements (digital and scanned) into CSV, XLSX and QBO files entirely offline. Every transaction is verified against the statement's printed running balances.",
+  "url": "https://software.alchemforge.com/",
+  "offers": { "@type": "Offer", "price": "129.00", "priceCurrency": "USD", "url": "https://alchemforge.gumroad.com/l/iflgeir", "availability": "https://schema.org/InStock" },
+  "publisher": { "@type": "Organization", "name": "Alchemforge Inc", "url": "https://alchemforge.com" }
+}
+</script>
+<style>
+:root {
+  --paper: #f6f3ec;
+  --ink: #221e18;
+  --ink-soft: rgba(34,30,24,0.72);
+  --line: rgba(34,30,24,0.14);
+  --gold: #a87b1f;
+  --gold-deep: #7c5a12;
+  --card: #fffdf8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Inter, system-ui, sans-serif; font-size: 16.5px; line-height: 1.6;
+}
+a { color: inherit; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+
+header { border-bottom: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; gap: 1rem; }
+.brand { display: flex; align-items: baseline; gap: 0.55rem; text-decoration: none; }
+.brand img { height: 30px; display: block; align-self: center; }
+.brand span { font-family: "Instrument Serif", serif; font-size: 1.25rem; letter-spacing: 0.01em; }
+.nav a.back { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; }
+.nav a.back:hover { color: var(--ink); border-color: var(--ink); }
+
+.hero { padding: 4.2rem 0 3rem; border-bottom: 1px solid var(--line); }
+h1 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: clamp(2.3rem, 5.4vw, 3.6rem); line-height: 1.08; margin: 0 0 1rem; max-width: 17ch; }
+h1 em { font-style: italic; color: var(--gold-deep); }
+.hero p { max-width: 54ch; margin: 0; color: var(--ink-soft); }
+.hero .creed { margin-top: 1.6rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.6rem; font-size: 0.93rem; color: var(--ink); }
+.hero .creed span::before { content: "â€” "; color: var(--gold); }
+
+section { padding: 3.2rem 0; }
+h2 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.85rem; margin: 0 0 1.6rem; }
+
+.flagship {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  display: grid; grid-template-columns: 1.5fr 1fr; overflow: hidden;
+}
+.flagship .about { padding: 2rem 2.2rem; }
+.flagship .kind { font-size: 0.85rem; color: var(--gold-deep); margin-bottom: 0.45rem; }
+.flagship h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.7rem; margin: 0 0 0.7rem; line-height: 1.15; }
+.flagship p { margin: 0 0 1rem; color: var(--ink-soft); font-size: 0.98rem; }
+.flagship ul { margin: 0; padding: 0; list-style: none; font-size: 0.95rem; }
+.flagship li { padding: 0.22rem 0 0.22rem 1.35rem; position: relative; }
+.flagship li::before { content: "âœ“"; position: absolute; left: 0; color: var(--gold-deep); font-weight: 600; }
+.flagship .buy {
+  border-left: 1px solid var(--line); padding: 2rem 2.2rem;
+  display: flex; flex-direction: column; justify-content: center; gap: 0.9rem;
+  background: linear-gradient(160deg, rgba(168,123,31,0.07), rgba(168,123,31,0.0) 60%);
+}
+.price { font-family: "Instrument Serif", serif; font-size: 2.6rem; line-height: 1; }
+.price small { font-family: Inter, sans-serif; font-size: 0.85rem; color: var(--ink-soft); display: block; margin-top: 0.4rem; }
+.btn {
+  display: inline-block; text-align: center; text-decoration: none; cursor: pointer;
+  background: var(--ink); color: var(--paper); border-radius: 6px;
+  padding: 0.78rem 1.4rem; font-weight: 600; font-size: 0.98rem; border: 1px solid var(--ink);
+}
+.btn:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.ghost:hover { background: transparent; color: var(--gold-deep); border-color: var(--gold-deep); }
+.smallprint { font-size: 0.83rem; color: var(--ink-soft); margin: 0; }
+.smallprint a { color: inherit; }
+
+.ext-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.ext {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.7rem 1.9rem;
+  display: flex; flex-direction: column; gap: 0.6rem;
+}
+.ext .kind { font-size: 0.85rem; color: var(--gold-deep); }
+.ext h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.35rem; margin: 0; }
+.ext p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; flex: 1; }
+.ext .row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 0.6rem; }
+.ext .tag { font-size: 0.9rem; }
+.more { margin-top: 1.4rem; color: var(--ink-soft); font-size: 0.93rem; }
+
+footer { border-top: 1px solid var(--line); padding: 2rem 0 2.6rem; font-size: 0.9rem; color: var(--ink-soft); }
+footer .cols { display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; margin-bottom: 0.9rem; }
+footer a { color: inherit; }
+
+@media (max-width: 760px) {
+  .flagship { grid-template-columns: 1fr; }
+  .flagship .buy { border-left: 0; border-top: 1px solid var(--line); }
+  .ext-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://software.alchemforge.com/">
+      <img src="https://alchemforge.com/assets/images/logo.png" alt="" />
+      <span>Software</span>
+    </a>
+    <a class="back" href="https://alchemforge.com">Alchemforge studio â†’</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Tools that work <em>on your computer</em> â€” and keep your data there.</h1>
+      <p>Alchemforge builds small, careful software: desktop apps and Chrome extensions
+      that do one job well, run locally, and cost a fair price once.</p>
+      <div class="creed">
+        <span>One-time prices, no subscriptions</span>
+        <span>No uploads, no accounts, no tracking</span>
+        <span>Free tier on everything â€” try before you pay</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Flagship</h2>
+      <div class="flagship">
+        <div class="about">
+          <div class="kind">Windows desktop app</div>
+          <h3>Offline Bank Statement Converter</h3>
+          <p>Turns PDF bank statements â€” digital or scanned â€” into clean CSV, Excel and QBO files,
+          entirely offline. Built for bookkeepers, accountants and businesses that won't upload
+          client statements to a website.</p>
+          <ul>
+            <li>Digital and scanned statements (built-in OCR)</li>
+            <li>Every row verified against the statement's own printed balances</li>
+            <li>Exports CSV, XLSX and QBO Â· batch-convert whole folders</li>
+            <li>Free tier â€” test your own bank's statements first</li>
+          </ul>
+        </div>
+        <div class="buy">
+          <div class="price">$129<small>one-time Â· lifetime license Â· 2 computers Â· free updates</small></div>
+          <a class="btn" href="https://alchemforge.gumroad.com/l/iflgeir">Buy now</a>
+          <a class="btn ghost" href="https://alchemforge.com/converter.html">Learn more</a>
+          <p class="smallprint">Secure checkout by Gumroad. Instant download + license key by email.
+          14-day money-back guarantee Â· <a href="https://alchemforge.com/terms.html">terms</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Chrome extensions</h2>
+      <div class="ext-grid">
+        <div class="ext">
+          <div class="kind">Chrome extension</div>
+          <h3>Save All Tabs as PDF</h3>
+          <p>Print every open tab to a real, text-searchable PDF in one click â€” or merge them all
+          into one bookmarked PDF. Runs entirely in your browser; no page content ever leaves it.</p>
+          <div class="row">
+            <span class="tag">Free Â· Pro $12 one-time</span>
+            <a class="btn ghost" href="https://chromewebstore.google.com/detail/save-all-tabs-as-pdf-%E2%80%94-pr/fpooocajkgfageliiledpmeejcghopeg">Get it on Chrome</a>
+          </div>
+        </div>
+        <div class="ext">
+          <div class="kind">Chrome extension</div>
+          <h3>Pact Blocker</h3>
+          <p>A website blocker with a partner lock: the block list can only be changed with a code
+          held by someone you trust, so the decision stays made.</p>
+          <div class="row">
+            <span class="tag">$14.99 one-time</span>
+            <a class="btn ghost" href="https://chromewebstore.google.com/search/Pact%20Blocker">Find on Chrome</a>
+          </div>
+        </div>
+      </div>
+      <p class="more">More tools are on the way â€” this page grows as they ship.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <a href="https://alchemforge.com">Alchemforge studio</a>
+      <a href="https://alchemforge.com/terms.html">Terms &amp; refunds</a>
+      <a href="https://alchemforge.com/privacy.html">Privacy</a>
+      <a href="mailto:mendy@alchemforge.com">mendy@alchemforge.com</a>
+    </div>
+    <div>Â© 2026 Alchemforge Inc, Spring Valley, NY. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
