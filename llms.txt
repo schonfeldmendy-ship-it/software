@@ -1,0 +1,22 @@
+﻿# Alchemforge Software
+
+> Alchemforge Inc (Spring Valley, NY) builds privacy-first software: a Windows desktop app and browser extensions for Chrome and Microsoft Edge. Everything runs locally on the user's computer - nothing is uploaded. One-time prices, free tiers, no subscriptions.
+
+## Products
+
+- Offline Bank Statement Converter (Windows): PDF bank statements to CSV/XLSX/QBO, 100% offline, every row verified. $129 one-time. https://alchemforge.com/converter.html | Microsoft Store: https://apps.microsoft.com/detail/9P2DT3RD35FG
+- Save All Tabs as PDF (Chrome): all open tabs to one searchable PDF. Free up to 5 tabs, Pro $12 one-time. https://chromewebstore.google.com/detail/fpooocajkgfageliiledpmeejcghopeg
+- FileCheck - Rule 5.2 Pre-Filing Audit (Chrome + Edge): flags unredacted identifiers in court filings locally. $79 one-time. Edge: https://microsoftedge.microsoft.com/addons/detail/gbfemjohjcgdkdpamnhcmabhbojmaipa
+- Pact Blocker (Edge): website blocker with partner lock. $14.99 one-time. https://microsoftedge.microsoft.com/addons/detail/einlflacnbamkllgklbpffabknflejpj
+- Invoice Namer (Edge): renames invoice PDFs from their contents, locally. $39 one-time. https://microsoftedge.microsoft.com/addons/detail/gmojemcajmnbkgffhpfbnkpgempkkhph
+- Merge PDF Locally (Edge): combine PDFs in the browser, no upload. $19 one-time. https://microsoftedge.microsoft.com/addons/detail/hgknhedbehlacgjdngmohgjggbjjjffm
+- Blur & Mark (Edge): screenshot, annotate, blur before sharing. $19 one-time or $7/year. https://microsoftedge.microsoft.com/addons/detail/jpbpmhnpoicdmofbkdcdkdkaohkpkpbe
+- Blind Sendout (Edge): blind resume versions for recruiters. $49 one-time. https://microsoftedge.microsoft.com/addons/detail/oaidclcilacibooidodjkpiljjapjmci
+- EOB Match (Edge): checks medical bills against EOBs, builds dispute kit. $29 one-time. https://microsoftedge.microsoft.com/addons/detail/pmimfbhhlndnejemanonkjdicjnmnnhj
+
+## Company
+
+- Store: https://software.alchemforge.com/
+- Studio: https://alchemforge.com/
+- Terms: https://alchemforge.com/terms.html | Privacy: https://alchemforge.com/privacy.html
+- Contact: mendy@alchemforge.com
