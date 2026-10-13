@@ -1,0 +1,232 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Save All Tabs as PDF &mdash; Alchemforge</title>
+<meta name="description" content="Print every open tab to a real, text-searchable PDF in one click - or merge them all into one bookmarked PDF." />
+<meta name="theme-color" content="#f6f3ec" />
+<link rel="icon" href="https://alchemforge.com/assets/images/favicon.ico" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Save All Tabs as PDF",
+      "operatingSystem": "Windows, macOS, Linux, ChromeOS",
+      "applicationCategory": "BrowserApplication",
+      "description": "Print every open tab to a real, text-searchable PDF in one click - or merge them all into one bookmarked PDF.",
+      "url": "https://software.alchemforge.com/save-all-tabs.html",
+      "installUrl": "https://chromewebstore.google.com/detail/save-all-tabs-as-pdf-%E2%80%94-pr/fpooocajkgfageliiledpmeejcghopeg",
+      "offers": {
+        "@type": "Offer",
+        "price": "12.00",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Alchemforge Inc",
+        "url": "https://alchemforge.com"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I save all my open tabs as one PDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Install Save All Tabs as PDF from the Chrome Web Store, open the tabs you want, and click the extension button. It prints every open tab and can merge them into a single PDF with a bookmark for each tab."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the PDF real text or just a picture of the page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Real text. Pages are printed the way the browser prints, so the PDF stays searchable and selectable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my tabs or page contents uploaded anywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Everything runs inside your browser on your computer. No page content, address or title leaves the machine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free version handles up to 5 tabs per job. The Pro version is a $12 one-time purchase - no subscription - and removes the limit."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  --paper: #f6f3ec;
+  --ink: #221e18;
+  --ink-soft: rgba(34,30,24,0.72);
+  --line: rgba(34,30,24,0.14);
+  --gold: #a87b1f;
+  --gold-deep: #7c5a12;
+  --card: #fffdf8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Inter, system-ui, sans-serif; font-size: 16.5px; line-height: 1.6;
+}
+a { color: inherit; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+
+header { border-bottom: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; gap: 1rem; }
+.brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; }
+.brand img { height: 30px; display: block; }
+.brand span { font-family: "Instrument Serif", serif; font-size: 1.25rem; letter-spacing: 0.01em; }
+.nav a.back { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; }
+.nav a.back:hover { color: var(--ink); border-color: var(--ink); }
+
+.hero { padding: 4.2rem 0 3rem; border-bottom: 1px solid var(--line); }
+h1 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: clamp(2.3rem, 5.4vw, 3.6rem); line-height: 1.08; margin: 0 0 1rem; max-width: 22ch; }
+h1 em { font-style: italic; color: var(--gold-deep); }
+.hero p { max-width: 54ch; margin: 0; color: var(--ink-soft); }
+.hero .creed { margin-top: 1.6rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.6rem; font-size: 0.93rem; color: var(--ink); }
+.hero .creed span::before { content: "\2014\00A0"; color: var(--gold); }
+
+section { padding: 3.2rem 0; }
+h2 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.85rem; margin: 0 0 1.6rem; }
+
+.flagship {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  display: grid; grid-template-columns: 1.5fr 1fr; overflow: hidden;
+}
+.flagship .about { padding: 2rem 2.2rem; }
+.flagship .kind { font-size: 0.85rem; color: var(--gold-deep); margin-bottom: 0.45rem; }
+.flagship h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.7rem; margin: 0 0 0.7rem; line-height: 1.15; }
+.flagship p { margin: 0 0 1rem; color: var(--ink-soft); font-size: 0.98rem; }
+.flagship ul { margin: 0; padding: 0; list-style: none; font-size: 0.95rem; }
+.flagship li { padding: 0.22rem 0 0.22rem 1.35rem; position: relative; }
+.flagship li::before { content: "\2713"; position: absolute; left: 0; color: var(--gold-deep); font-weight: 600; }
+.flagship .buy {
+  border-left: 1px solid var(--line); padding: 2rem 2.2rem;
+  display: flex; flex-direction: column; justify-content: center; gap: 0.9rem;
+  background: linear-gradient(160deg, rgba(168,123,31,0.07), rgba(168,123,31,0.0) 60%);
+}
+.price { font-family: "Instrument Serif", serif; font-size: 2.6rem; line-height: 1; }
+.price small { font-family: Inter, sans-serif; font-size: 0.85rem; color: var(--ink-soft); display: block; margin-top: 0.4rem; }
+.btn {
+  display: inline-block; text-align: center; text-decoration: none; cursor: pointer;
+  background: var(--ink); color: var(--paper); border-radius: 6px;
+  padding: 0.78rem 1.4rem; font-weight: 600; font-size: 0.98rem; border: 1px solid var(--ink);
+}
+.btn:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.ghost:hover { background: transparent; color: var(--gold-deep); border-color: var(--gold-deep); }
+.smallprint { font-size: 0.83rem; color: var(--ink-soft); margin: 0; }
+.smallprint a { color: inherit; }
+
+.ext-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.ext {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.7rem 1.9rem;
+  display: flex; flex-direction: column; gap: 0.6rem;
+}
+.ext .kind { font-size: 0.85rem; color: var(--gold-deep); }
+.ext h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.35rem; margin: 0; }
+.ext p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; flex: 1; }
+.ext .row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 0.6rem; }
+.ext .tag { font-size: 0.9rem; }
+.more { margin-top: 1.4rem; color: var(--ink-soft); font-size: 0.93rem; }
+.stores { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.7rem; }
+.stores .btn { padding: 0.55rem 1rem; font-size: 0.88rem; }
+.localnote { font-size: 0.82rem; color: var(--gold-deep); margin: 0; }
+
+footer { border-top: 1px solid var(--line); padding: 2rem 0 2.6rem; font-size: 0.9rem; color: var(--ink-soft); }
+footer .cols { display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; margin-bottom: 0.9rem; }
+footer a { color: inherit; }
+
+@media (max-width: 760px) {
+  .flagship { grid-template-columns: 1fr; }
+  .flagship .buy { border-left: 0; border-top: 1px solid var(--line); }
+  .ext-grid { grid-template-columns: 1fr; }
+}
+.product-head { padding: 3.4rem 0 2.2rem; border-bottom: 1px solid var(--line); }
+.product-head .kind { font-size: 0.9rem; color: var(--gold-deep); margin-bottom: 0.5rem; }
+.product-head p.lede { max-width: 60ch; color: var(--ink-soft); }
+.faq-item { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.3rem 1.6rem; margin-bottom: 1rem; }
+.faq-item h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.2rem; margin: 0 0 0.45rem; }
+.faq-item p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://software.alchemforge.com/">
+      <img src="https://alchemforge.com/assets/images/logo.png" alt="" />
+      <span>Software</span>
+    </a>
+    <a class="back" href="https://software.alchemforge.com/">All products &rarr;</a>
+  </div>
+</header>
+<main>
+  <section class="product-head">
+    <div class="wrap">
+      <div class="kind">Chrome extension</div>
+      <h1>Save All Tabs as PDF</h1>
+      <p class="lede">Print every open tab to a real, text-searchable PDF in one click &mdash; or merge them all into one bookmarked PDF.</p>
+      <p class="localnote">Runs 100% in your browser &mdash; nothing is uploaded.</p>
+      <div class="row" style="margin-top:0.9rem;"><span class="tag">Free up to 5 tabs &middot; Pro $12 one-time</span></div>
+      <div class="stores">
+        <a class="btn" href="https://chromewebstore.google.com/detail/save-all-tabs-as-pdf-%E2%80%94-pr/fpooocajkgfageliiledpmeejcghopeg" target="_blank" rel="noopener">Get it for Chrome</a>\n        <!-- Edge Add-ons listing in review; add Edge button here when approved -->
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <h2>Questions &amp; answers</h2>
+        <div class="faq-item">
+          <h3>How do I save all my open tabs as one PDF?</h3>
+          <p>Install Save All Tabs as PDF from the Chrome Web Store, open the tabs you want, and click the extension button. It prints every open tab and can merge them into a single PDF with a bookmark for each tab.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is the PDF real text or just a picture of the page?</h3>
+          <p>Real text. Pages are printed the way the browser prints, so the PDF stays searchable and selectable.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are my tabs or page contents uploaded anywhere?</h3>
+          <p>No. Everything runs inside your browser on your computer. No page content, address or title leaves the machine.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is it free?</h3>
+          <p>The free version handles up to 5 tabs per job. The Pro version is a $12 one-time purchase &mdash; no subscription &mdash; and removes the limit.</p>
+        </div>
+      <p class="more">More questions? Email <a href="mailto:mendy@alchemforge.com">mendy@alchemforge.com</a> &mdash; a person answers.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <a href="https://software.alchemforge.com/">All products</a>
+      <a href="https://alchemforge.com/terms.html">Terms &amp; refunds</a>
+      <a href="https://alchemforge.com/privacy.html">Privacy</a>
+      <a href="mailto:mendy@alchemforge.com">mendy@alchemforge.com</a>
+    </div>
+    <div>&copy; 2026 Alchemforge Inc, Spring Valley, NY. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
