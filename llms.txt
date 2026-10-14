@@ -23,4 +23,5 @@
 - Store: https://software.alchemforge.com/
 - Studio: https://alchemforge.com/
 - Terms: https://alchemforge.com/terms.html | Privacy: https://alchemforge.com/privacy.html
+- Affiliate program (40% commission): https://software.alchemforge.com/affiliates.html
 - Contact: mendy@alchemforge.com
