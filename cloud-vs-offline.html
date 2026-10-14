@@ -1,0 +1,247 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cloud vs Offline Bank Statement Conversion &mdash; What Leaves Your Computer</title>
+<meta name="description" content="Converter websites process your bank statements on their servers. Offline conversion keeps them on your computer. A plain comparison for bookkeepers and businesses." />
+<meta name="theme-color" content="#f6f3ec" />
+<link rel="icon" href="https://alchemforge.com/assets/images/favicon.ico" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Should you upload bank statements to a converter website?",
+      "author": {
+        "@type": "Organization",
+        "name": "Alchemforge Inc"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Alchemforge Inc",
+        "url": "https://alchemforge.com"
+      },
+      "datePublished": "2026-10-14",
+      "dateModified": "2026-10-14",
+      "url": "https://software.alchemforge.com/cloud-vs-offline.html"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it safe to upload bank statements to a converter website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When you upload a statement to a converter website, the file is processed on their servers and handled under their privacy policy - account numbers, balances and transactions included. For your own statements, that is a personal choice. For client statements, many bookkeepers and firms are not comfortable with it, and some engagement agreements do not allow it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the alternative to uploading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An offline converter: software installed on your own computer that reads the PDF locally. Nothing is transmitted. Offline Bank Statement Converter works this way - it runs with no internet connection at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do offline converters handle scanned paper statements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This one does - it has built-in OCR for scanned statements, and it flags unreadable rows for review instead of guessing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know an offline conversion is accurate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bank statements print a running balance after every transaction. Offline Bank Statement Converter verifies every extracted row against those printed balances and marks it Verified; anything that does not reconcile is flagged. You can test this on the free tier before paying."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  --paper: #f6f3ec;
+  --ink: #221e18;
+  --ink-soft: rgba(34,30,24,0.72);
+  --line: rgba(34,30,24,0.14);
+  --gold: #a87b1f;
+  --gold-deep: #7c5a12;
+  --card: #fffdf8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Inter, system-ui, sans-serif; font-size: 16.5px; line-height: 1.6;
+}
+a { color: inherit; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+
+header { border-bottom: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; gap: 1rem; }
+.brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; }
+.brand img { height: 30px; display: block; }
+.brand span { font-family: "Instrument Serif", serif; font-size: 1.25rem; letter-spacing: 0.01em; }
+.nav a.back { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; }
+.nav a.back:hover { color: var(--ink); border-color: var(--ink); }
+
+.hero { padding: 4.2rem 0 3rem; border-bottom: 1px solid var(--line); }
+h1 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: clamp(2.3rem, 5.4vw, 3.6rem); line-height: 1.08; margin: 0 0 1rem; max-width: 22ch; }
+h1 em { font-style: italic; color: var(--gold-deep); }
+.hero p { max-width: 54ch; margin: 0; color: var(--ink-soft); }
+.hero .creed { margin-top: 1.6rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.6rem; font-size: 0.93rem; color: var(--ink); }
+.hero .creed span::before { content: "\2014\00A0"; color: var(--gold); }
+
+section { padding: 3.2rem 0; }
+h2 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.85rem; margin: 0 0 1.6rem; }
+
+.flagship {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  display: grid; grid-template-columns: 1.5fr 1fr; overflow: hidden;
+}
+.flagship .about { padding: 2rem 2.2rem; }
+.flagship .kind { font-size: 0.85rem; color: var(--gold-deep); margin-bottom: 0.45rem; }
+.flagship h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.7rem; margin: 0 0 0.7rem; line-height: 1.15; }
+.flagship p { margin: 0 0 1rem; color: var(--ink-soft); font-size: 0.98rem; }
+.flagship ul { margin: 0; padding: 0; list-style: none; font-size: 0.95rem; }
+.flagship li { padding: 0.22rem 0 0.22rem 1.35rem; position: relative; }
+.flagship li::before { content: "\2713"; position: absolute; left: 0; color: var(--gold-deep); font-weight: 600; }
+.flagship .buy {
+  border-left: 1px solid var(--line); padding: 2rem 2.2rem;
+  display: flex; flex-direction: column; justify-content: center; gap: 0.9rem;
+  background: linear-gradient(160deg, rgba(168,123,31,0.07), rgba(168,123,31,0.0) 60%);
+}
+.price { font-family: "Instrument Serif", serif; font-size: 2.6rem; line-height: 1; }
+.price small { font-family: Inter, sans-serif; font-size: 0.85rem; color: var(--ink-soft); display: block; margin-top: 0.4rem; }
+.btn {
+  display: inline-block; text-align: center; text-decoration: none; cursor: pointer;
+  background: var(--ink); color: var(--paper); border-radius: 6px;
+  padding: 0.78rem 1.4rem; font-weight: 600; font-size: 0.98rem; border: 1px solid var(--ink);
+}
+.btn:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.ghost:hover { background: transparent; color: var(--gold-deep); border-color: var(--gold-deep); }
+.smallprint { font-size: 0.83rem; color: var(--ink-soft); margin: 0; }
+.smallprint a { color: inherit; }
+
+.ext-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.ext {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.7rem 1.9rem;
+  display: flex; flex-direction: column; gap: 0.6rem;
+}
+.ext .kind { font-size: 0.85rem; color: var(--gold-deep); }
+.ext h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.35rem; margin: 0; }
+.ext p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; flex: 1; }
+.ext .row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 0.6rem; }
+.ext .tag { font-size: 0.9rem; }
+.more { margin-top: 1.4rem; color: var(--ink-soft); font-size: 0.93rem; }
+.stores { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.7rem; }
+.stores .btn { padding: 0.55rem 1rem; font-size: 0.88rem; }
+.localnote { font-size: 0.82rem; color: var(--gold-deep); margin: 0; }
+
+footer { border-top: 1px solid var(--line); padding: 2rem 0 2.6rem; font-size: 0.9rem; color: var(--ink-soft); }
+footer .cols { display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; margin-bottom: 0.9rem; }
+footer a { color: inherit; }
+
+@media (max-width: 760px) {
+  .flagship { grid-template-columns: 1fr; }
+  .flagship .buy { border-left: 0; border-top: 1px solid var(--line); }
+  .ext-grid { grid-template-columns: 1fr; }
+}
+.product-head { padding: 3.4rem 0 2.2rem; border-bottom: 1px solid var(--line); }
+.product-head p.lede { max-width: 62ch; color: var(--ink-soft); }
+.faq-item { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.3rem 1.6rem; margin-bottom: 1rem; }
+.faq-item h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.2rem; margin: 0 0 0.45rem; }
+.faq-item p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+table.cmp { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; font-size: 0.95rem; }
+table.cmp th, table.cmp td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+table.cmp th { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.05rem; }
+table.cmp td:first-child { color: var(--ink-soft); width: 32%; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://software.alchemforge.com/">
+      <img src="https://alchemforge.com/assets/images/logo.png" alt="" />
+      <span>Software</span>
+    </a>
+    <a class="back" href="https://software.alchemforge.com/">All products &rarr;</a>
+  </div>
+</header>
+<main>
+  <section class="product-head">
+    <div class="wrap">
+      <h1>Should you upload bank statements to a converter website?</h1>
+      <p class="lede"><strong>Short answer:</strong> a converter website processes your statement on its servers, under its privacy policy.
+      An offline converter processes it on your own computer, and nothing is transmitted.
+      For your own statements that is a preference; for client statements it is often the whole decision.</p>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <h2>The difference, plainly</h2>
+      <table class="cmp">
+        <tr><th></th><th>Converter websites (cloud)</th><th>Offline Bank Statement Converter</th></tr>
+        <tr><td>Where the statement is processed</td><td>On the company&#39;s servers</td><td>On your own computer</td></tr>
+        <tr><td>What leaves your computer</td><td>The full statement &mdash; accounts, balances, transactions</td><td>Nothing. Works with no internet connection</td></tr>
+        <tr><td>Data retention</td><td>Governed by each site&#39;s privacy policy</td><td>No copy exists anywhere but your machine</td></tr>
+        <tr><td>Typical pricing</td><td>Usually a monthly subscription</td><td>$129 once &mdash; lifetime license, 2 computers, free updates</td></tr>
+        <tr><td>Scanned paper statements</td><td>Varies by service</td><td>Yes &mdash; built-in OCR; unreadable rows are flagged, never guessed</td></tr>
+        <tr><td>Accuracy check</td><td>Varies by service</td><td>Every row verified against the statement&#39;s own printed running balances</td></tr>
+        <tr><td>Try before paying</td><td>Varies by service</td><td>Free tier &mdash; test your own bank&#39;s statements first</td></tr>
+      </table>
+      <div class="stores" style="margin-top:1.4rem;">
+        <a class="btn" href="https://alchemforge.gumroad.com/l/iflgeir" target="_blank" rel="noopener">Buy now &mdash; $129</a>
+        <a class="btn ghost" href="https://apps.microsoft.com/detail/9P2DT3RD35FG" target="_blank" rel="noopener">Free app on the Microsoft Store</a>
+        <a class="btn ghost" href="bank-statement-converter.html">Questions &amp; answers</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <h2>Common questions</h2>
+        <div class="faq-item">
+          <h3>Is it safe to upload bank statements to a converter website?</h3>
+          <p>When you upload a statement to a converter website, the file is processed on their servers and handled under their privacy policy &mdash; account numbers, balances and transactions included. For your own statements, that is a personal choice. For client statements, many bookkeepers and firms are not comfortable with it, and some engagement agreements do not allow it.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is the alternative to uploading?</h3>
+          <p>An offline converter: software installed on your own computer that reads the PDF locally. Nothing is transmitted. Offline Bank Statement Converter works this way &mdash; it runs with no internet connection at all.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do offline converters handle scanned paper statements?</h3>
+          <p>This one does &mdash; it has built-in OCR for scanned statements, and it flags unreadable rows for review instead of guessing.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I know an offline conversion is accurate?</h3>
+          <p>Bank statements print a running balance after every transaction. Offline Bank Statement Converter verifies every extracted row against those printed balances and marks it Verified; anything that does not reconcile is flagged. You can test this on the free tier before paying.</p>
+        </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <a href="https://software.alchemforge.com/">All products</a>
+      <a href="https://alchemforge.com/terms.html">Terms &amp; refunds</a>
+      <a href="https://alchemforge.com/privacy.html">Privacy</a>
+      <a href="mailto:mendy@alchemforge.com">mendy@alchemforge.com</a>
+    </div>
+    <div>&copy; 2026 Alchemforge Inc, Spring Valley, NY. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>

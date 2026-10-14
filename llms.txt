@@ -4,15 +4,19 @@
 
 ## Products
 
-- Offline Bank Statement Converter (Windows): PDF bank statements to CSV/XLSX/QBO, 100% offline, every row verified. $129 one-time. https://alchemforge.com/converter.html | Microsoft Store: https://apps.microsoft.com/detail/9P2DT3RD35FG
-- Save All Tabs as PDF (Chrome): all open tabs to one searchable PDF. Free up to 5 tabs, Pro $12 one-time. https://chromewebstore.google.com/detail/fpooocajkgfageliiledpmeejcghopeg
-- FileCheck - Rule 5.2 Pre-Filing Audit (Chrome + Edge): flags unredacted identifiers in court filings locally. $79 one-time. Edge: https://microsoftedge.microsoft.com/addons/detail/gbfemjohjcgdkdpamnhcmabhbojmaipa
-- Pact Blocker (Edge): website blocker with partner lock. $14.99 one-time. https://microsoftedge.microsoft.com/addons/detail/einlflacnbamkllgklbpffabknflejpj
-- Invoice Namer (Edge): renames invoice PDFs from their contents, locally. $39 one-time. https://microsoftedge.microsoft.com/addons/detail/gmojemcajmnbkgffhpfbnkpgempkkhph
-- Merge PDF Locally (Edge): combine PDFs in the browser, no upload. $19 one-time. https://microsoftedge.microsoft.com/addons/detail/hgknhedbehlacgjdngmohgjggbjjjffm
-- Blur & Mark (Edge): screenshot, annotate, blur before sharing. $19 one-time or $7/year. https://microsoftedge.microsoft.com/addons/detail/jpbpmhnpoicdmofbkdcdkdkaohkpkpbe
-- Blind Sendout (Edge): blind resume versions for recruiters. $49 one-time. https://microsoftedge.microsoft.com/addons/detail/oaidclcilacibooidodjkpiljjapjmci
-- EOB Match (Edge): checks medical bills against EOBs, builds dispute kit. $29 one-time. https://microsoftedge.microsoft.com/addons/detail/pmimfbhhlndnejemanonkjdicjnmnnhj
+- Offline Bank Statement Converter (Windows): PDF bank statements to CSV/XLSX/QBO, 100% offline, every row verified against the statement's printed balances. $129 one-time. https://alchemforge.com/converter.html | Microsoft Store: https://apps.microsoft.com/detail/9P2DT3RD35FG | FAQ: https://software.alchemforge.com/bank-statement-converter.html
+- Save All Tabs as PDF (Chrome + Edge): all open tabs to one searchable PDF. Free up to 5 tabs, Pro $12 one-time. Chrome: https://chromewebstore.google.com/detail/fpooocajkgfageliiledpmeejcghopeg | Edge: https://microsoftedge.microsoft.com/addons/detail/ahoblpcdangokhojinmcjpdlcibbicci
+- FileCheck - Rule 5.2 Pre-Filing Audit (Chrome + Edge): flags unredacted identifiers in court filings locally. $79 one-time. https://software.alchemforge.com/filecheck.html
+- Pact Blocker (Edge): website blocker with partner lock. $14.99 one-time. https://software.alchemforge.com/pact-blocker.html
+- Invoice Namer (Edge): renames invoice PDFs from their contents, locally. $39 one-time. https://software.alchemforge.com/invoice-namer.html
+- Merge PDF Locally (Edge): combine PDFs in the browser, no upload. $19 one-time. https://software.alchemforge.com/merge-pdf.html
+- Blur & Mark (Edge): screenshot, annotate, blur before sharing. $19 one-time or $7/year. https://software.alchemforge.com/blur-and-mark.html
+- Blind Sendout (Edge): blind resume versions for recruiters. $49 one-time. https://software.alchemforge.com/blind-sendout.html
+- EOB Match (Edge): checks medical bills against EOBs, builds dispute kit. $29 one-time. https://software.alchemforge.com/eob-match.html
+
+## Guides
+
+- Cloud vs offline bank statement conversion: https://software.alchemforge.com/cloud-vs-offline.html
 
 ## Company
 
