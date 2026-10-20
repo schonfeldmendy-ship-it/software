@@ -1,0 +1,209 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SignUpSheet.page &mdash; Alchemforge</title>
+<meta name="description" content="Free online sign-up sheets and group date polls. Make a sheet in 30 seconds, share one link, people sign up from any phone. No ads, no accounts." />
+<meta name="theme-color" content="#f6f3ec" />
+<link rel="icon" href="https://alchemforge.com/assets/images/favicon.ico" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "SignUpSheet.page",
+      "operatingSystem": "Any",
+      "applicationCategory": "Scheduling",
+      "browserRequirements": "Works in any modern browser on phones and computers",
+      "description": "Free online sign-up sheets and group date polls. Make a sheet in about 30 seconds, share one link, and people sign up from any phone. No ads, no accounts needed.",
+      "url": "https://signupsheet.page",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Alchemforge Inc",
+        "url": "https://alchemforge.com"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is SignUpSheet.page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A free website for online sign-up sheets and group date polls. An organizer makes a sheet in about 30 seconds and shares one link; people sign up from any phone. There are 16 ready templates, from potlucks and volunteer shifts to parent-teacher conferences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Sign-up sheets, date polls, slot limits, automatic waitlists, reminder emails, calendar buttons, templates and CSV export are all free, with no ads. An optional paid plan may be offered later, but the core tool is free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do people need to create an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No - nobody needs an account. People sign up straight from the shared link, and the organizer manages the sheet through a private admin link sent by email."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when a slot is full?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Slot limits prevent double-booking, and an automatic waitlist moves the next person up if someone cancels. Each participant also gets a private link to edit or cancel their own sign-up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it send reminders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes - a reminder email goes out the day before, and every sheet has Google, Apple and Outlook add-to-calendar buttons."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are no ads, no tracking cookies, and analytics are cookieless. Sign-up details are stored only to run your sheet and are never sold. The full privacy policy is at signupsheet.page/privacy."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  --paper: #f6f3ec;
+  --ink: #221e18;
+  --ink-soft: rgba(34,30,24,0.72);
+  --line: rgba(34,30,24,0.14);
+  --gold: #a87b1f;
+  --gold-deep: #7c5a12;
+  --card: #fffdf8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Inter, system-ui, sans-serif; font-size: 16.5px; line-height: 1.6;
+}
+a { color: inherit; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; gap: 1rem; }
+.brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; }
+.brand img { height: 30px; display: block; }
+.brand span { font-family: "Instrument Serif", serif; font-size: 1.25rem; letter-spacing: 0.01em; }
+.nav a.back { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; }
+.nav a.back:hover { color: var(--ink); border-color: var(--ink); }
+section { padding: 3.2rem 0; }
+h1 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: clamp(2.3rem, 5.4vw, 3.6rem); line-height: 1.08; margin: 0 0 1rem; max-width: 22ch; }
+h2 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.85rem; margin: 0 0 1.6rem; }
+.btn {
+  display: inline-block; text-align: center; text-decoration: none; cursor: pointer;
+  background: var(--ink); color: var(--paper); border-radius: 6px;
+  padding: 0.78rem 1.4rem; font-weight: 600; font-size: 0.98rem; border: 1px solid var(--ink);
+}
+.btn:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--paper); }
+.row { display: flex; align-items: center; gap: 1rem; }
+.tag { font-size: 0.9rem; }
+.more { margin-top: 1.4rem; color: var(--ink-soft); font-size: 0.93rem; }
+.stores { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.7rem; }
+.localnote { font-size: 0.82rem; color: var(--gold-deep); margin: 0; }
+footer { border-top: 1px solid var(--line); padding: 2rem 0 2.6rem; font-size: 0.9rem; color: var(--ink-soft); }
+footer .cols { display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; margin-bottom: 0.9rem; }
+footer a { color: inherit; }
+.product-head { padding: 3.4rem 0 2.2rem; border-bottom: 1px solid var(--line); }
+.product-head .kind { font-size: 0.9rem; color: var(--gold-deep); margin-bottom: 0.5rem; }
+.product-head p.lede { max-width: 60ch; color: var(--ink-soft); }
+.faq-item { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.3rem 1.6rem; margin-bottom: 1rem; }
+.faq-item h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.2rem; margin: 0 0 0.45rem; }
+.faq-item p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://software.alchemforge.com/">
+      <img src="https://alchemforge.com/assets/images/logo.png" alt="" />
+      <span>Software</span>
+    </a>
+    <a class="back" href="https://software.alchemforge.com/">All products &rarr;</a>
+  </div>
+</header>
+<main>
+  <section class="product-head">
+    <div class="wrap">
+      <div class="kind">Free web app &middot; works on any phone or computer</div>
+      <h1>SignUpSheet.page</h1>
+      <p class="lede">Free online sign-up sheets and group date polls. Make a sheet in about 30 seconds, share one link, and people sign up from any phone &mdash; no ads, and nobody needs an account.</p>
+      <p class="localnote">No ads &middot; no accounts needed &middot; no tracking cookies.</p>
+      <div class="row" style="margin-top:0.9rem;"><span class="tag">Free</span></div>
+      <div class="stores">
+        <a class="btn" href="https://signupsheet.page" target="_blank" rel="noopener">Open SignUpSheet.page</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <h2>Questions &amp; answers</h2>
+        <div class="faq-item">
+          <h3>What is SignUpSheet.page?</h3>
+          <p>A free website for online sign-up sheets and group date polls. An organizer makes a sheet in about 30 seconds and shares one link; people sign up from any phone. There are 16 ready templates &mdash; from potlucks and volunteer shifts to parent-teacher conferences.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is it really free?</h3>
+          <p>Yes. Sign-up sheets, date polls, slot limits, automatic waitlists, reminder emails, calendar buttons, templates and CSV export are all free, with no ads. An optional paid plan may be offered later, but the core tool is free.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do people need to create an account?</h3>
+          <p>No &mdash; nobody needs an account. People sign up straight from the shared link, and the organizer manages the sheet through a private admin link sent by email.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What happens when a slot is full?</h3>
+          <p>Slot limits prevent double-booking, and an automatic waitlist moves the next person up if someone cancels. Each participant also gets a private link to edit or cancel their own sign-up.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does it send reminders?</h3>
+          <p>Yes &mdash; a reminder email goes out the day before, and every sheet has Google, Apple and Outlook add-to-calendar buttons.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is my data private?</h3>
+          <p>There are no ads, no tracking cookies, and analytics are cookieless. Sign-up details are stored only to run your sheet and are never sold. The full privacy policy is at <a href="https://signupsheet.page/privacy" target="_blank" rel="noopener">signupsheet.page/privacy</a>.</p>
+        </div>
+      <p class="more">More questions? Email <a href="mailto:mendy@alchemforge.com">mendy@alchemforge.com</a> &mdash; a person answers.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <a href="https://software.alchemforge.com/">All products</a>
+      <a href="https://alchemforge.com/terms.html">Terms &amp; refunds</a>
+      <a href="https://alchemforge.com/privacy.html">Privacy</a>
+      <a href="mailto:mendy@alchemforge.com">mendy@alchemforge.com</a>
+    </div>
+    <div>&copy; 2026 Alchemforge Inc, Spring Valley, NY. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>

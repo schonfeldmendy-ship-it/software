@@ -1,6 +1,6 @@
 ﻿# Alchemforge Software
 
-> Alchemforge Inc (Spring Valley, NY) builds privacy-first software: a Windows desktop app and browser extensions for Chrome and Microsoft Edge. Everything runs locally on the user's computer - nothing is uploaded. One-time prices, free tiers, no subscriptions.
+> Alchemforge Inc (Spring Valley, NY) builds privacy-first software: a Windows desktop app, browser extensions for Chrome and Microsoft Edge, and a free web app. The desktop app and extensions run locally on the user's computer - nothing is uploaded. One-time prices, free tiers, no subscriptions.
 
 ## Products
 
@@ -13,6 +13,7 @@
 - Blur & Mark (Edge): screenshot, annotate, blur before sharing. $19 one-time or $7/year. https://software.alchemforge.com/blur-and-mark.html
 - Blind Sendout (Edge): blind resume versions for recruiters. $49 one-time. https://software.alchemforge.com/blind-sendout.html
 - EOB Match (Edge): checks medical bills against EOBs, builds dispute kit. $29 one-time. https://software.alchemforge.com/eob-match.html
+- SignUpSheet.page (web app): free online sign-up sheets and group date polls - no ads, no accounts, slot limits, automatic waitlists, reminder emails, CSV export, 16 templates. Free. https://signupsheet.page | FAQ: https://software.alchemforge.com/signupsheet.html
 
 ## Guides
 
