@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Glam Bestie: free AI makeup coach &mdash; Alchemforge</title>
+<meta name="description" content="Glam Bestie is a free AI makeup coach: a 30-second face scan finds your undertone, face shape and the foundation, concealer, lip and blush shades that suit you. Photos never stored." />
+<meta name="theme-color" content="#f6f3ec" />
+<link rel="icon" href="https://alchemforge.com/assets/images/favicon.ico" sizes="any" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="canonical" href="https://software.alchemforge.com/glambestie.html" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Glam Bestie",
+      "url": "https://glambestie.com/",
+      "operatingSystem": "Any",
+      "applicationCategory": "LifestyleApplication",
+      "browserRequirements": "Works in the browser on any phone or computer",
+      "description": "Free AI makeup coach: a 30-second face scan finds your undertone, face shape and best foundation, concealer, lip and blush shades, then a voice coach guides makeup looks live on your face. Photos are never stored.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Alchemforge Inc",
+        "url": "https://alchemforge.com"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Glam Bestie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A free AI makeup coach that works in the browser on any phone — nothing to install. A 30-second face scan (front and both sides) finds your undertone (cool, neutral, warm or olive), face shape and skin depth, gives you a personal Glow Name, and suggests the shades that suit you. Then a voice coach guides makeup looks step by step, showing on your own face where each product goes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The face scan, your undertone, face shape and Glow Name are free with no account. With a free account you also get your foundation, concealer, lip and blush shade ranges and a guided look. An optional Premium adds the shades for all 8 products, every look and more daily checks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work for olive, deep or very fair skin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The scan reads olive as its own undertone (the classic warm/cool/neutral quiz leaves it out), and the shade ranges cover very fair to very deep skin. For the most accurate read, face a window in daylight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my photos stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Face photos are used only to read your coloring and are never stored, and there are no ads in the app. The full privacy policy is at glambestie.com/privacy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which languages does it speak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glam Bestie works in 15 languages, including English, Spanish, Portuguese, French, German, Italian, Hebrew and Arabic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is it for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Women 18 and over who want makeup that suits their own coloring — from beginners learning a five-minute look to people choosing the right foundation, blush or red lipstick."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  --paper: #f6f3ec;
+  --ink: #221e18;
+  --ink-soft: rgba(34,30,24,0.72);
+  --line: rgba(34,30,24,0.14);
+  --gold: #a87b1f;
+  --gold-deep: #7c5a12;
+  --card: #fffdf8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: Inter, system-ui, sans-serif; font-size: 16.5px; line-height: 1.6;
+}
+a { color: inherit; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; gap: 1rem; }
+.brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; }
+.brand img { height: 30px; display: block; }
+.brand span { font-family: "Instrument Serif", serif; font-size: 1.25rem; letter-spacing: 0.01em; }
+.nav a.back { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; }
+.nav a.back:hover { color: var(--ink); border-color: var(--ink); }
+section { padding: 3.2rem 0; }
+h1 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: clamp(2.3rem, 5.4vw, 3.6rem); line-height: 1.08; margin: 0 0 1rem; max-width: 22ch; }
+h2 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.85rem; margin: 0 0 1.6rem; }
+.btn {
+  display: inline-block; text-align: center; text-decoration: none; cursor: pointer;
+  background: var(--ink); color: var(--paper); border-radius: 6px;
+  padding: 0.78rem 1.4rem; font-weight: 600; font-size: 0.98rem; border: 1px solid var(--ink);
+}
+.btn:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--paper); }
+.row { display: flex; align-items: center; gap: 1rem; }
+.tag { font-size: 0.9rem; }
+.more { margin-top: 1.4rem; color: var(--ink-soft); font-size: 0.93rem; }
+.stores { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.7rem; }
+.localnote { font-size: 0.82rem; color: var(--gold-deep); margin: 0; }
+footer { border-top: 1px solid var(--line); padding: 2rem 0 2.6rem; font-size: 0.9rem; color: var(--ink-soft); }
+footer .cols { display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; margin-bottom: 0.9rem; }
+footer a { color: inherit; }
+.product-head { padding: 3.4rem 0 2.2rem; border-bottom: 1px solid var(--line); }
+.product-head .kind { font-size: 0.9rem; color: var(--gold-deep); margin-bottom: 0.5rem; }
+.product-head p.lede { max-width: 60ch; color: var(--ink-soft); }
+.faq-item { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.3rem 1.6rem; margin-bottom: 1rem; }
+.faq-item h3 { font-family: "Instrument Serif", serif; font-weight: 400; font-size: 1.2rem; margin: 0 0 0.45rem; }
+.faq-item p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://software.alchemforge.com/">
+      <img src="https://alchemforge.com/assets/images/logo.png" alt="" />
+      <span>Software</span>
+    </a>
+    <a class="back" href="https://software.alchemforge.com/">All products &rarr;</a>
+  </div>
+</header>
+<main>
+  <section class="product-head">
+    <div class="wrap">
+      <div class="kind">Free web app &middot; works on any phone</div>
+      <h1>Glam Bestie</h1>
+      <p class="lede">A free AI makeup coach. A 30-second face scan finds your undertone, face shape and the foundation, concealer, lip and blush shades that suit you &mdash; then a voice coach guides 14 makeup looks step by step, drawn live on your own face.</p>
+      <p class="localnote">Photos never stored &middot; nothing to install &middot; 15 languages &middot; for women 18+.</p>
+      <div class="row" style="margin-top:0.9rem;"><span class="tag">Free</span><span class="tag">Premium optional</span></div>
+      <div class="stores">
+        <a class="btn" href="https://glambestie.com/" target="_blank" rel="noopener">Open Glam Bestie</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <h2>Questions &amp; answers</h2>
+        <div class="faq-item">
+          <h3>What is Glam Bestie?</h3>
+          <p>A free AI makeup coach that works in the browser on any phone &mdash; nothing to install. A 30-second face scan (front and both sides) finds your undertone (cool, neutral, warm or olive), face shape and skin depth, gives you a personal Glow Name, and suggests the shades that suit you. Then a voice coach guides makeup looks step by step, showing on your own face where each product goes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is it free?</h3>
+          <p>Yes. The face scan, your undertone, face shape and Glow Name are free with no account. With a free account you also get your foundation, concealer, lip and blush shade ranges and a guided look. An optional Premium adds the shades for all 8 products, every look and more daily checks.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does it work for olive, deep or very fair skin?</h3>
+          <p>Yes. The scan reads olive as its own undertone (the classic warm/cool/neutral quiz leaves it out), and the shade ranges cover very fair to very deep skin. For the most accurate read, face a window in daylight.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are my photos stored?</h3>
+          <p>No. Face photos are used only to read your coloring and are never stored, and there are no ads in the app. The full privacy policy is at <a href="https://glambestie.com/privacy" target="_blank" rel="noopener">glambestie.com/privacy</a>.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Which languages does it speak?</h3>
+          <p>Glam Bestie works in 15 languages, including English, Spanish, Portuguese, French, German, Italian, Hebrew and Arabic.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Who is it for?</h3>
+          <p>Women 18 and over who want makeup that suits their own coloring &mdash; from beginners learning a five-minute look to people choosing the right foundation, blush or red lipstick.</p>
+        </div>
+      <h2 style="margin-top:2rem;">Free makeup guides</h2>
+      <ul>
+        <li><a href="https://glambestie.com/guides/find-your-undertone" target="_blank" rel="noopener">How to find your undertone: 5 tests that work</a></li>
+        <li><a href="https://glambestie.com/guides/olive-skin-undertone" target="_blank" rel="noopener">Olive skin undertone: signs and the makeup that suits it</a></li>
+        <li><a href="https://glambestie.com/guides/find-your-foundation-shade" target="_blank" rel="noopener">How to find your foundation shade</a></li>
+        <li><a href="https://glambestie.com/guides/how-to-apply-blush" target="_blank" rel="noopener">How to apply blush for your face shape</a></li>
+        <li><a href="https://glambestie.com/tools/color-analysis-quiz" target="_blank" rel="noopener">Free color analysis quiz: find your color season</a></li>
+      </ul>
+      <p class="more">More questions? Email <a href="mailto:hello@glambestie.com">hello@glambestie.com</a> &mdash; a person answers.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <a href="https://software.alchemforge.com/">All products</a>
+      <a href="https://alchemforge.com/terms.html">Terms &amp; refunds</a>
+      <a href="https://alchemforge.com/privacy.html">Privacy</a>
+      <a href="mailto:hello@glambestie.com">hello@glambestie.com</a>
+    </div>
+    <div>&copy; 2026 Alchemforge Inc, Spring Valley, NY. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>

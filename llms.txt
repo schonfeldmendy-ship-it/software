@@ -1,6 +1,6 @@
-﻿# Alchemforge Software
+# Alchemforge Software
 
-> Alchemforge Inc (Spring Valley, NY) builds privacy-first software: a Windows desktop app, browser extensions for Chrome and Microsoft Edge, and a free web app. The desktop app and extensions run locally on the user's computer - nothing is uploaded. One-time prices, free tiers, no subscriptions.
+> Alchemforge Inc (Spring Valley, NY) builds privacy-first software: a Windows desktop app, browser extensions for Chrome and Microsoft Edge, and free web apps. The desktop app and extensions run locally on the user's computer - nothing is uploaded. One-time prices, free tiers, no subscriptions.
 
 ## Products
 
@@ -14,6 +14,7 @@
 - Blind Sendout (Edge): blind resume versions for recruiters. $49 one-time. https://software.alchemforge.com/blind-sendout.html
 - EOB Match (Edge): checks medical bills against EOBs, builds dispute kit. $29 one-time. https://software.alchemforge.com/eob-match.html
 - SignUpSheet.page (web app): free online sign-up sheets and group date polls - no ads, no accounts, slot limits, automatic waitlists, reminder emails, CSV export, 16 templates. Free. https://signupsheet.page | FAQ: https://software.alchemforge.com/signupsheet.html
+- Glam Bestie (web app): free AI makeup coach for women 18+ - a 30-second face scan finds your undertone (cool, neutral, warm or olive), face shape and best foundation, concealer, lip and blush shades; a voice coach guides 14 looks live on your face. Photos never stored, 15 languages. Free, Premium optional. https://glambestie.com | FAQ: https://software.alchemforge.com/glambestie.html
 
 ## Guides
 
